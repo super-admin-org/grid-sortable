@@ -1,0 +1,34 @@
+{
+    "name": "super-admin-ext/grid-sortable",
+    "description": "Sort the grid data by drag and drop rows",
+    "type": "library",
+    "keywords": ["super-admin", "extension", "grid", "sortable"],
+    "homepage": "https://github.com/super-admin-org/grid-sortable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sb | super-admin.org",
+            "email": "info@super-admin.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "super-admin-org/super-admin": ">=1.0.0",
+        "spatie/eloquent-sortable": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SuperAdmin\\Admin\\GridSortable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SuperAdmin\\Admin\\GridSortable\\GridSortableServiceProvider"
+            ]
+        }
+    }
+}
